@@ -3,7 +3,14 @@
 
 $(document).ready(function() {
 r = function() {
-$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-960.png' : 'images/logo-640.png') : 'images/logo-320.png');};
+if($(window).width() >= 960) {
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-960-4.png' : 'images/logo-640-4.png') : 'images/logo-320-4.png');} else if($(window).width() >= 768) {
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-960-3.png' : 'images/logo-640-3.png') : 'images/logo-320-3.png');} else if($(window).width() >= 480) {
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-960-2.png' : 'images/logo-640-2.png') : 'images/logo-320-2.png');
+} else {
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-960.png' : 'images/logo-640.png') : 'images/logo-320.png');
+}
+};
 $(window).resize(r);
 r();
 
