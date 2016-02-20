@@ -4,11 +4,11 @@
 $(document).ready(function() {
 r = function() {
 if($(window).width() >= 960) {
-$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-1575-2.png' : 'images/logo-horizontal-1050-2.png') : 'images/logo-horizontal-525-2.png');} else if($(window).width() >= 768) {
-$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-1575.png' : 'images/logo-horizontal-1050.png') : 'images/logo-horizontal-525.png');} else if($(window).width() >= 480) {
-$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-1440.png' : 'images/logo-horizontal-960-2.png') : 'images/logo-horizontal-480.png');
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-1575-2.png' : 'images/logo-horizontal-1050-3.png') : 'images/logo-horizontal-525-2.png');} else if($(window).width() >= 768) {
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-1575.png' : 'images/logo-horizontal-1050-2.png') : 'images/logo-horizontal-525.png');} else if($(window).width() >= 480) {
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-1050.png' : 'images/logo-horizontal-700.png') : 'images/logo-horizontal-350.png');
 } else {
-$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-960.png' : 'images/logo-horizontal-640.png') : 'images/logo-horizontal-320.png');
+$('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logo-horizontal-750.png' : 'images/logo-horizontal-500.png') : 'images/logo-horizontal-250.png');
 }
 };
 $(window).resize(r);
